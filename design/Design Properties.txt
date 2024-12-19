@@ -1,0 +1,8 @@
+Palette:
+https://coolors.co/0c1531-001f54-0669c6-1494b8-fefcfb-858585
+
+Fonts:
+Logo: Nova Square
+Content 1 (Like Nav): Kulim Park
+Content 2 (Website Content): Fira Sans Condensed
+Arabic Content: Rubik

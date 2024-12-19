@@ -1,0 +1,8 @@
+@import '../utils/Utils.css';
+
+button.favorite-button {
+    position: absolute;
+    right: var(--padding-s);
+    width: var(--favorite-button-width);
+    border-radius: var(--border-radius-xs);
+}
