@@ -85,6 +85,9 @@
     --lyrics-container-max-width: 25rem;
     --youtube-iframe-width: 30rem;
     --youtube-icon-width: 1.875rem;
+    --form-input-height: 1.75rem;
+    --form-width: 25rem;
+    --sidebar-bottom-height: 4.375rem;
 
     /* Backgrounds */
     --loading-background: no-repeat

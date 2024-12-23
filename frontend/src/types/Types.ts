@@ -100,6 +100,13 @@ export type YouTubeVideoProps = {
     videoId: string
 }
 
+export type FormInputProps = {
+    id?: string
+    placeholder?: string
+    type: 'text' | 'password' | 'email'
+    valueState: [string, Dispatch<SetStateAction<string>>]
+}
+
 // Objects Types
 export type HeaderStyleType = {
     background: string

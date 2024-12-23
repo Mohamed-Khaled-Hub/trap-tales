@@ -20,6 +20,30 @@ div.sidebar-container {
         height: 100%;
         background: light-dark(var(--l2), var(--d4));
         border-left: var(--border-xs) solid light-dark(var(--d1), var(--d3));
-        overflow-y: auto;
+        padding: var(--padding-s);
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: calc(100% - var(--sidebar-bottom-height)) var(
+                --sidebar-bottom-height
+            );
+
+        div.top {
+            overflow-y: auto;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        div.bottom {
+            display: flex;
+            align-items: center;
+            justify-content: end;
+            flex-direction: column;
+            gap: var(--padding-xs);
+
+            * {
+                width: 100%;
+            }
+        }
     }
 }

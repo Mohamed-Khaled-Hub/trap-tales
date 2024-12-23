@@ -33,6 +33,7 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
                         className={classNameObject}
                         target={target}
                         id={id}
+                        onClick={onClick}
                     >
                         {children}
                     </Link>

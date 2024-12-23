@@ -18,6 +18,8 @@ import SearchPage from './pages/SearchPage.tsx'
 import ArtistPage from './pages/ArtistPage.tsx'
 import AlbumPage from './pages/AlbumPage.tsx'
 import TrackPage from './pages/TrackPage.tsx'
+import LoginPage from './pages/LoginPage.tsx'
+import SignupPage from './pages/SignupPage.tsx'
 // Components
 import SomethingWentWrong from './components/SomethingWentWrong.tsx'
 // Styles
@@ -56,8 +58,20 @@ const router = createBrowserRouter(
                 }
             />
             <Route path='favorites' element={<h1>Favorites</h1>} />
-            <Route path='login' element={<h1>Login</h1>} />
-            <Route path='signup' element={<h1>Signup</h1>} />
+            <Route
+                path='login'
+                element={<LoginPage />}
+                errorElement={
+                    <SomethingWentWrong refetchFunc={location.reload} />
+                }
+            />
+            <Route
+                path='signup'
+                element={<SignupPage />}
+                errorElement={
+                    <SomethingWentWrong refetchFunc={location.reload} />
+                }
+            />
             <Route path='*' element={<h1>Page Not Found</h1>} />
         </Route>
     )

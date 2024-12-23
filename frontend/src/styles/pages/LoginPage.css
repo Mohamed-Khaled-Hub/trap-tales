@@ -1,0 +1,25 @@
+@import '../utils/Utils.css';
+
+div.login-page {
+    form#login-form {
+        width: var(--form-width);
+        max-width: 100%;
+        display: flex;
+        align-items: end;
+        flex-direction: column;
+        gap: var(--padding-xs);
+
+        h1 {
+            width: 100%;
+            text-align: center;
+        }
+
+        label {
+            width: 100%;
+        }
+
+        button {
+            margin-top: var(--padding-s);
+        }
+    }
+}
